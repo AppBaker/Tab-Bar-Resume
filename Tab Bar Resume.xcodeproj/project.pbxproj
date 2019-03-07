@@ -54,14 +54,38 @@
 		E488D7932230C3D400CC4518 /* Tab Bar Resume */ = {
 			isa = PBXGroup;
 			children = (
-				E488D7942230C3D400CC4518 /* AppDelegate.swift */,
-				E488D7962230C3D400CC4518 /* ViewController.swift */,
-				E488D7982230C3D400CC4518 /* Main.storyboard */,
-				E488D79B2230C3D700CC4518 /* Assets.xcassets */,
-				E488D79D2230C3D700CC4518 /* LaunchScreen.storyboard */,
+				E488D7A82230C43F00CC4518 /* Suporting files */,
+				E488D7A62230C41E00CC4518 /* Controller */,
+				E488D7A72230C43300CC4518 /* View */,
 				E488D7A02230C3D700CC4518 /* Info.plist */,
 			);
 			path = "Tab Bar Resume";
+			sourceTree = "<group>";
+		};
+		E488D7A62230C41E00CC4518 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E488D7962230C3D400CC4518 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E488D7A72230C43300CC4518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E488D7982230C3D400CC4518 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E488D7A82230C43F00CC4518 /* Suporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E488D7942230C3D400CC4518 /* AppDelegate.swift */,
+				E488D79B2230C3D700CC4518 /* Assets.xcassets */,
+				E488D79D2230C3D700CC4518 /* LaunchScreen.storyboard */,
+			);
+			path = "Suporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
