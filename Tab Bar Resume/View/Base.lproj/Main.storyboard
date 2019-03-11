@@ -66,49 +66,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AYh-Mb-hFi">
-                                <rect key="frame" x="20" y="67.5" width="280" height="345.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Образование: Красноярский Государственный Аграрный Университет. Факультет Механизации сельского хозяйства" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0i-8Y-2h7">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="81.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Водитель фронтального погрузчика Bobcat" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5av-cA-yOH">
-                                        <rect key="frame" x="0.0" y="101.5" width="198" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Работа в компании Спецпартнер (Аренда спецтехники) на должности технического директора" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko9-9d-C3a">
-                                        <rect key="frame" x="0.0" y="162.5" width="280" height="81.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разработчик мобильных приложений для IOS, на пути к этому. Первое приложение а AppStore это &quot;Счетчик мячей&quot;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0W-sJ-XRH">
-                                        <rect key="frame" x="0.0" y="264" width="280" height="81.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="E0i-8Y-2h7" secondAttribute="trailing" id="6eC-JB-TcO"/>
-                                    <constraint firstItem="E0i-8Y-2h7" firstAttribute="leading" secondItem="AYh-Mb-hFi" secondAttribute="leading" id="9aT-j2-kSI"/>
-                                    <constraint firstItem="J0W-sJ-XRH" firstAttribute="leading" secondItem="AYh-Mb-hFi" secondAttribute="leading" id="BfE-rc-49z"/>
-                                    <constraint firstAttribute="trailing" secondItem="J0W-sJ-XRH" secondAttribute="trailing" id="cI0-vc-ydX"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ko9-9d-C3a" secondAttribute="trailing" id="fdn-2I-Fbh"/>
-                                </constraints>
-                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wCU-ew-ajn">
+                                <rect key="frame" x="20" y="64" width="280" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Образование: Красноярский Государственный Аграрный Университет. Факультет Механизации сельского хозяйства
+
+Водитель фронтального погрузчика Bobcat
+
+Работа в компании Спецпартнер (Аренда спецтехники) на должности технического директора
+
+Разработчик мобильных приложений для IOS, на пути к этому. Первое приложение а AppStore это "Счетчик мячей"</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AYh-Mb-hFi" firstAttribute="centerY" secondItem="R6A-Rz-NIY" secondAttribute="centerY" id="35H-U6-yPQ"/>
-                            <constraint firstAttribute="trailing" secondItem="AYh-Mb-hFi" secondAttribute="trailing" constant="20" id="GBo-Cs-7q9"/>
-                            <constraint firstItem="AYh-Mb-hFi" firstAttribute="leading" secondItem="S4R-nZ-k1u" secondAttribute="leading" constant="20" id="hxT-P3-Qz0"/>
-                            <constraint firstItem="AYh-Mb-hFi" firstAttribute="centerX" secondItem="R6A-Rz-NIY" secondAttribute="centerX" id="mn1-0F-YuG"/>
+                            <constraint firstItem="wCU-ew-ajn" firstAttribute="top" secondItem="S4R-nZ-k1u" secondAttribute="top" id="NUg-o0-Mh6"/>
+                            <constraint firstItem="S4R-nZ-k1u" firstAttribute="bottom" secondItem="wCU-ew-ajn" secondAttribute="bottom" id="Sq0-5J-VMz"/>
+                            <constraint firstItem="wCU-ew-ajn" firstAttribute="leading" secondItem="S4R-nZ-k1u" secondAttribute="leading" constant="20" id="kt9-rR-emM"/>
+                            <constraint firstItem="S4R-nZ-k1u" firstAttribute="trailing" secondItem="wCU-ew-ajn" secondAttribute="trailing" constant="20" id="l2e-zB-vuB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S4R-nZ-k1u"/>
                     </view>
@@ -121,6 +98,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="nightModeButton" destination="Ifg-x0-Cbl" id="xyY-VB-dqg"/>
+                        <outlet property="resumeTextField" destination="wCU-ew-ajn" id="zR6-r9-TCB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSA-dp-0aD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,7 +162,21 @@
                     <view key="view" contentMode="scaleToFill" id="ZuM-N6-QUT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-ls-dBh">
+                                <rect key="frame" x="78" y="219.5" width="164" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Cчетчик мячей"/>
+                                <connections>
+                                    <action selector="ballCaunterAppPressed" destination="dSi-77-3pf" eventType="touchUpInside" id="0KW-yt-4Ab"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hGL-ls-dBh" firstAttribute="centerY" secondItem="ZuM-N6-QUT" secondAttribute="centerY" id="8Ic-rS-6VV"/>
+                            <constraint firstItem="hGL-ls-dBh" firstAttribute="centerX" secondItem="ZuM-N6-QUT" secondAttribute="centerX" id="hvl-bP-OsI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ls3-4e-sfB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Мои работы" id="Et7-aR-UEw">
@@ -200,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCg-TD-ngb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1281" y="2838"/>
+            <point key="canvasLocation" x="1280.625" y="2837.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UYB-6L-4jX">
